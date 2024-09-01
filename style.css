@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.nav-flex-row li {
+    list-style-type: none;
+    padding: 20px 15px;
+}
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #555;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.nav-flex-row li a:hover {
+    color: #333;
+}
+.section-intro {
+    height: 820px;
+    background-image: url(background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-intro h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.link-to-book-wrapper {
+    margin-top: 20px;
+}
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #333;
+    text-decoration: none;
+}
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 50px 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about-section h3,
+.about-section p {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: #555;
+}
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+.flex-column-form {
+    flex: 1;
+    margin: 30px 20px;
+}
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #3498db;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    border: 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn.btn-primary:hover {
+    background-color: #2980b9;
+}
+.opening-time,
+.contact-adress {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+.form-group p {
+    font-size: 1.2em;
+}
+.opening-time p span,
+.contact-adress p span {
+    display: block;
+    color: #555;
+}
+@media (min-width: 577px) and (max-width: 800px) {
+    .section-intro {
+        height: 500px;
+    }
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+    .row-flex {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+    .about-section {
+        padding: 30px;
+    }
+    .section-intro h1 {
+        font-size: 2em;
+    }
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+    .row-flex {
+        flex-direction: column;
+    }
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .form-group p {
+        font-size: 15px;
+    }
+    .opening-time p span,
+    .contact-adress p span {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+footer span {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #555;
+    font-size: 1em;
+    text-transform: uppercase;
+}
